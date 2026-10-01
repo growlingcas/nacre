@@ -1,0 +1,17 @@
+{
+  "_note": "rss feeds NACRE AUTIC reads every 30 minutes. no api keys. add or remove lines freely.",
+  "rss": [
+    { "name": "coindesk",         "url": "https://www.coindesk.com/arc/outboundfeeds/rss/" },
+    { "name": "cointelegraph",    "url": "https://cointelegraph.com/rss" },
+    { "name": "decrypt",          "url": "https://decrypt.co/feed" },
+    { "name": "the block",        "url": "https://www.theblock.co/rss.xml" },
+    { "name": "bitcoin magazine", "url": "https://bitcoinmagazine.com/feed" },
+    { "name": "cryptoslate",      "url": "https://cryptoslate.com/feed/" }
+  ],
+  "market": {
+    "_note": "public endpoints without keys. if they fail, the site simply shows a dash.",
+    "prices": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true",
+    "fear_greed": "https://api.alternative.me/fng/?limit=1"
+  },
+  "keep": { "feed": 80, "drafts": 12, "fear_history": 500 }
+}

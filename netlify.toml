@@ -1,0 +1,13 @@
+# the site has no build step. netlify just serves the folder.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/hippocampus/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/cortex/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
